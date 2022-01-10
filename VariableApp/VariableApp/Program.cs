@@ -25,6 +25,10 @@ namespace VariableApp
             total = 31.51;
 
             Console.WriteLine($"\nThe price of the item is {price:C} \nThe tax is {tax:C} \nThe total is {total:C}");  //The :C converts the int value into currency format
+
+///////////////////////////////////////////////////////////////////////////
+
+
         }
     }
 }
