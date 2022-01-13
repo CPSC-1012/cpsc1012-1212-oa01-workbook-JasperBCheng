@@ -30,7 +30,7 @@ namespace WageApp
             double overtimeHourlyRate;
             double regularWages;
             double overtimeWages;
-            dobule totalWages;
+            double totalWages;
 
             // Prompt and read in the values for regular hourly rate
             Console.Write($"");
