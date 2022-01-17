@@ -6,15 +6,16 @@ namespace Exercise_01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Welcome to Structure Programming Exercises!");
-            Console.WriteLine($"Please press enter to continue . . . .");
-            Console.Write($"> ");
+            Console.WriteLine($"Welcome to Sequence Structure Exercises!");
+            Console.Write($"Please press enter to continue: ");
             Console.ReadLine();
+            Console.Clear();
             //Ex1();
             //Ex2();
-            Ex3();
+            //Ex3();
             //Ex4();
             //Ex5();
+            //test();
         }
 
         static void Ex1()
@@ -88,11 +89,21 @@ namespace Exercise_01
 
         static void Ex4()
         {
-            int Integer;
-            double Total;
+            int integer, integertest, digit1, digit2, digit3, digit4, totalsum;
             Console.WriteLine($"Please enter a number between 0 and 1000");
             Console.Write($"> ");
-            Integer = int.Parse(Console.ReadLine());
+            integer = int.Parse(Console.ReadLine());
+            Console.Clear();
+            integertest = integer;    
+            digit1 = integertest % 10;
+            integertest = integertest / 10;
+            digit2 = integertest % 10;
+            integertest = integertest / 10;
+            digit3 = integertest % 10;
+            integertest = integertest / 10;
+            digit4 = integertest % 10;
+            totalsum = digit1 + digit2 + digit3 + digit4;
+            Console.WriteLine($"The total sum of all digits is {totalsum}");
         }
 
         static void Ex5()
@@ -121,6 +132,37 @@ namespace Exercise_01
             Console.WriteLine($"Please press enter to continue . . . .");
             Console.Write($"> ");
             Console.ReadLine();
+            Console.Clear();
+        }
+
+        static void test()
+        {
+            double number1;
+            double number2;
+            double number3;
+            Console.WriteLine($"This program will ask the user to give out three numbers \nThe program will then give out the sum and average of all three numbers");
+            Console.Write($"Please press enter to continue: ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine($"Please input the first number");
+            Console.Write($"> ");
+            number1 = double.Parse(Console.ReadLine());
+            Console.Clear();
+            Console.WriteLine($"Please input the second number");
+            Console.Write($"> ");
+            number2 = double.Parse(Console.ReadLine());
+            Console.Clear();
+            Console.WriteLine($"Please input the third number");
+            Console.Write($"> ");
+            number3 = double.Parse(Console.ReadLine());
+            Console.Clear();
+            ///////////////////////////////////////////////
+            double sum = number1 + number2 + number3; //This basically finds the sum of all three numbers the user has given
+            double average = sum / 3; //Meanwhile this code allows us to find the average of all three numbers that was given by the user
+            ///////////////////////////////////////////////
+            Console.WriteLine($"The sum of the three numbers is {sum} while the average is {average}");
+            Console.Write($"Please press enter to continue: ");
+            Console.Read();
             Console.Clear();
         }
     }
