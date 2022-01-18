@@ -61,7 +61,8 @@ namespace CPSC1012_Lab01_JasperCheng
             priceTotal = subTotal + taxTotal;
 
             // Writing out the receipt of the item
-            Console.WriteLine($"\n<------------------------------>");
+            Console.WriteLine($"\n        Invoice Summary");
+            Console.WriteLine($"<------------------------------>");
             Console.WriteLine($" Sub Total: {subTotal, 19:C}");
             Console.WriteLine($"\n\n Provicial Tax: {provincialTax, 15:C}");
             Console.WriteLine($" Federal Tax: {federalTax, 17:C}");
