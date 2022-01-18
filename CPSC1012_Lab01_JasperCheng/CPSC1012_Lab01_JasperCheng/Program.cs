@@ -29,7 +29,7 @@ namespace CPSC1012_Lab01_JasperCheng
 
             // Written by: Jasper B. Cheng
             // Written for: Sam Wu
-            // CPSC1012 - Programming Fundamentails Section OA01
+            // CPSC1012 - Programming Fundamentals Section OA01
 
 
             // Declaring all of the variables being used in this program
