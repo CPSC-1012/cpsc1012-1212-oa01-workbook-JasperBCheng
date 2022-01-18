@@ -40,12 +40,10 @@ namespace CPSC1012_Lab01_JasperCheng
             // Asking the user to input the price of the item
             Console.Write($"Please enter the price of the item: ");
             itemPrice = double.Parse(Console.ReadLine());
-            Console.Clear();
 
             // Asking the user to input the quantity of the item
             Console.Write($"Please enter the quantity of the item being purchased: ");
             itemQuantity = int.Parse(Console.ReadLine());
-            Console.Clear();
 
             // Calculating the subTotal
             subTotal = itemPrice * itemQuantity;
@@ -63,14 +61,14 @@ namespace CPSC1012_Lab01_JasperCheng
             priceTotal = subTotal + taxTotal;
 
             // Writing out the receipt of the item
+            Console.WriteLine($"\n<------------------------------>");
+            Console.WriteLine($" Sub Total: {subTotal, 19:C}");
+            Console.WriteLine($"\n\n Provicial Tax: {provincialTax, 15:C}");
+            Console.WriteLine($" Federal Tax: {federalTax, 17:C}");
+            Console.WriteLine($" Total Tax: {taxTotal, 19:C}");
+            Console.WriteLine($"\n\n Total Price: {priceTotal,17:C}");
             Console.WriteLine($"<------------------------------>");
-            Console.WriteLine($"Sub Total: {subTotal, 21:C}");
-            Console.WriteLine($"\n\nProvicial Tax: {provincialTax, 17:C}");
-            Console.WriteLine($"Federal Tax: {federalTax, 19:C}");
-            Console.WriteLine($"Total Tax: {taxTotal, 21:C}");
-            Console.WriteLine($"\n\nTotal Price: {priceTotal,19:C}");
-            Console.WriteLine($"<------------------------------>");
-            Console.WriteLine($"\n\nThank you for your purchase!");
+            Console.WriteLine($"\nThank you for your purchase!");
             Console.Write($"Please press enter to exit: ");
             Console.ReadLine();
         }
