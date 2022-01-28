@@ -1,7 +1,7 @@
 ﻿using System;
 
 /**
- * Purpose: To create a program the can convert imperial system values into metric sytem values
+ * Purpose: To create a program the can convert imperial system values into metric system values
  * 
  * Input: ConversionSelected, Inches, Yards, Miles
  * 
